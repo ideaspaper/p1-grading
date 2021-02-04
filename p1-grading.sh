@@ -2,6 +2,7 @@
 ERR_MSG_CLONE="No config defined. Use [org] command first to set GitHub organization name. See help."
 ERR_MSG_WRONG_FORMAT="Wrong command format. See help."
 SUCCESS_MSG_ORG="Organization has been set as"
+GIT_GITHUB="git@github.com"
 
 command=$1
 param=$2
@@ -43,24 +44,35 @@ then
             cd "submissions/$param-${org}"
             if [ $param = "w1d1" ]
             then
-                git clone "git@github.com:${org}/problem-solving.git"
-                git clone "git@github.com:${org}/broken-palindrome-swapper.git"
-                git clone "git@github.com:${org}/susun-kursi.git"
-                git clone "git@github.com:${org}/money-coins.git"
+                git clone "${GIT_GITHUB}:${org}/problem-solving.git"
+                git clone "${GIT_GITHUB}:${org}/broken-palindrome-swapper.git"
+                git clone "${GIT_GITHUB}:${org}/susun-kursi.git"
+                git clone "${GIT_GITHUB}:${org}/money-coins.git"
             fi
             if [ $param = "w1d2" ]
             then
-                git clone "git@github.com:${org}/roman-numerals-recursive.git"
-                git clone "git@github.com:${org}/numbers-in-words.git"
-                git clone "git@github.com:${org}/linear-search.git"
-                git clone "git@github.com:${org}/selection-sort.git"
-                git clone "git@github.com:${org}/binary-search.git"
-                git clone "git@github.com:${org}/dictionary-sort.git"
+                git clone "${GIT_GITHUB}:${org}/roman-numerals-recursive.git"
+                git clone "${GIT_GITHUB}:${org}/numbers-in-words.git"
+                git clone "${GIT_GITHUB}:${org}/linear-search.git"
+                git clone "${GIT_GITHUB}:${org}/selection-sort.git"
+                git clone "${GIT_GITHUB}:${org}/binary-search.git"
+                git clone "${GIT_GITHUB}:${org}/dictionary-sort.git"
             fi
             if [ $param = "w1d3" ]
             then
-                git clone "git@github.com:${org}/jsracer.git"
-                git clone "git@github.com:${org}/check-vowels-in-array.git"
+                git clone "${GIT_GITHUB}:${org}/jsracer.git"
+                git clone "${GIT_GITHUB}:${org}/check-vowels-in-array.git"
+            fi
+            if [ $param = "w1d4" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/advanced-calculator.git"
+                git clone "${GIT_GITHUB}:${org}/parsing-data.git"
+                git clone "${GIT_GITHUB}:${org}/mango-tree.git"
+            fi
+            if [ $param = "w1d5" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/tree-grove.git"
+                git clone "${GIT_GITHUB}:${org}/cookies-and-ovens.git"
             fi
         fi
     else

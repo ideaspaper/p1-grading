@@ -35,7 +35,7 @@ then
             touch .config
         fi
         echo ${param} > .config
-        echo "${SUCCESS_MSG_ORG} ${param}"
+        echo "${SUCCESS_MSG_ORG} \"${param}\""
     else
         echo $ERR_MSG_WRONG_FORMAT
     fi

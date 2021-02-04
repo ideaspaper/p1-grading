@@ -38,7 +38,7 @@ then
             echo $ERR_MSG_CLONE
         else
             org=`cat .config`
-            rm -rf "submissions"
+            rm -rf "submissions/$param-${org}"
             mkdir -p "submissions/$param-${org}"
             cd "submissions/$param-${org}"
             if [ $param = "w1d1" ]

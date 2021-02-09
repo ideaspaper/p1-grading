@@ -85,6 +85,32 @@ then
                 git clone "${GIT_GITHUB}:${org}/tree-grove.git"
                 git clone "${GIT_GITHUB}:${org}/cookies-and-ovens.git"
             fi
+            if [ $param = "w2d1" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/object-composition.git"
+            fi
+            if [ $param = "w2d2" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/callback-belanja.git"
+                git clone "${GIT_GITHUB}:${org}/callback-countdown.git"
+                git clone "${GIT_GITHUB}:${org}/callback-multiple-file.git"
+                git clone "${GIT_GITHUB}:${org}/js-todos.git"
+            fi
+            if [ $param = "w2d3" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/sistem-rumahsehat-sederhana.git"
+            fi
+            if [ $param = "w2d4" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/all-relations-case-study.git"
+                git clone "${GIT_GITHUB}:${org}/schema-address-book.git"
+                git clone "${GIT_GITHUB}:${org}/schema-simple-e-commerce.git"
+                git clone "${GIT_GITHUB}:${org}/schema-poll-db.git"
+            fi
+            if [ $param = "w2d5" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/poll-db.git"
+            fi
         fi
     else
         echo $ERR_MSG_WRONG_FORMAT

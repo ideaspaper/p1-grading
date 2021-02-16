@@ -110,6 +110,15 @@ then
             if [ $param = "w2d5" ]
             then
                 git clone "${GIT_GITHUB}:${org}/poll-db.git"
+                git clone "${GIT_GITHUB}:${org}/school-application-weekend.git"
+            fi
+            if [ $param = "w3d1" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/school-application-express.git"
+            fi
+            if [ $param = "w3d2" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/school-application-mvc.git"
             fi
         fi
     else

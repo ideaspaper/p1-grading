@@ -120,6 +120,10 @@ then
             then
                 git clone "${GIT_GITHUB}:${org}/school-application-mvc.git"
             fi
+            if [ $param = "w3d3" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/school-application-refactor.git"
+            fi
         fi
     else
         echo $ERR_MSG_WRONG_FORMAT

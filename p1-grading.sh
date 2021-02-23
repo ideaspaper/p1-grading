@@ -124,6 +124,20 @@ then
             then
                 git clone "${GIT_GITHUB}:${org}/school-application-refactor.git"
             fi
+            if [ $param = "w3d4" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/promise-belanja.git"
+                git clone "${GIT_GITHUB}:${org}/promise-multiple-file.git"
+                git clone "${GIT_GITHUB}:${org}/school-application-promise.git"
+            fi
+            if [ $param = "w3d5" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/school-application-sequelize.git"
+            fi
+            if [ $param = "w4d1" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/movies-app.git"
+            fi
         fi
     else
         echo $ERR_MSG_WRONG_FORMAT

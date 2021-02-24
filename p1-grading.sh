@@ -138,6 +138,10 @@ then
             then
                 git clone "${GIT_GITHUB}:${org}/movies-app.git"
             fi
+            if [ $param = "w4d2" ]
+            then
+                git clone "${GIT_GITHUB}:${org}/movies-app.git"
+            fi
         fi
     else
         echo $ERR_MSG_WRONG_FORMAT
